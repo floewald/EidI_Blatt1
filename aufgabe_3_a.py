@@ -14,25 +14,28 @@ def getDepature(x, y, minutes):
     hh = 0
     # minutes depature or boarding
     mm = 0
-    # hours to count back
-    hcb = 0
-    # minutes to count back
-    mcb = 0
+    # # hours to count back
+    # hcb = 0
+    # # minutes to count back
+    # mcb = 0
     
-    hcb = minutes // 60
-    mcb = minutes % 60
+    # hcb = minutes // 60
+    # mcb = minutes % 60
 
-    if y > mcb:
-        mm = y - mcb
-    else:
-        mm = 60 - (mcb - y)
-        hh = hh - 1
+    # if y > mcb:
+    #     mm = y - mcb
+    # else:
+    #     mm = 60 - (mcb - y)
+    #     hh = hh - 1
 
-    if x > hcb:
-        hh = hh + x - hcb
-    else:
-        hh = 24 + hh - (hcb - x)
+    # if x > hcb:
+    #     hh = hh + x - hcb
+    # else:
+    #     hh = 24 + hh - (hcb - x)
 
+    # return hh, mm
+    mm = ( (60*x + y - minutes) %60 )
+    hh = ( (60*x + y - minutes) //60 ) %24
     return hh, mm
 
 # read actual time (x for the hours, y for the minutes)
