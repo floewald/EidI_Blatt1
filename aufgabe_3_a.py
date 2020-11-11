@@ -1,3 +1,8 @@
+# Gruppe 2
+# Moitov,   Carina
+# Flaum,    Arthur
+# Ewald,    Florian
+
 def inputInteger(varName):
     var = int( input("Please Enter {}:\n".format(varName) ) )
     return var

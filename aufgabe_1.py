@@ -1,3 +1,8 @@
+# Gruppe 2
+# Moitov,   Carina
+# Flaum,    Arthur
+# Ewald,    Florian
+
 def printOutput(Name, Value):
     print("         {0}{1}".format(Name, Value) )
 
