@@ -70,8 +70,6 @@ h_dep, m_dep = getDepature(x, y, z)
 # task 3a.2
 h_board, m_board = getDepature(x, y, z + t_board)
 
-
-
 print()
 print("Time:                {:02d}:{:02d}".format(x,y) )
 print("Flight duration:     {}".format(z) )

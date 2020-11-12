@@ -59,8 +59,6 @@ m_ger = 0
 # task 3b
 h_ger, m_ger = getGermanTime(x, y, z)
 
-
-
 print()
 print("Approximatley arriving in Korea:  {:02d}:{:02d}".format(x,y) )
 print("Time in Germany:                  {:02d}:{:02d}".format( h_ger, m_ger) )

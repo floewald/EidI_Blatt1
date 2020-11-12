@@ -52,12 +52,13 @@ width   = z**2
 area    = length * width
 
 # task 1.3
-testfloat = float(x < y)
-if testfloat == 1.0:
-    maximum = y
-elif testfloat == 0.0:
-    # is also used if x == y
-    maximum = x
+# testfloat = float(x < y)
+# if testfloat == 1.0:
+#     maximum = y
+# elif testfloat == 0.0:
+#     # is also used if x == y
+#     maximum = x
+maximum = float(x>y)*x + float(x<y)*y + float(x==y)*x
 
 # print section
 #####################################
@@ -68,4 +69,4 @@ printOutput("z = ", z)
 print("Ausgabe:")
 printOutput("Arithmetisches Mittel:  ", mean_xyz)
 printOutput("Flaeche:                ", area)
-printOutput("Maximum:                ", maximum)
+printOutput("Maximum (x oder y):                ", maximum)
